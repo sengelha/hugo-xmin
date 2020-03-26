@@ -6,7 +6,13 @@
 </div>
 
 <main>
+{{- if .Params.thumbnail }}
+<figure class="thumbnail">
+    <img src="{{ .Params.thumbnail | relURL }}" alt="{{ .Title }}">
+</figure>
+{{- end }}
 {{ .Content }}
+<div style="clear:right;"></div>
 </main>
 
 {{ partial "footer.html" . }}

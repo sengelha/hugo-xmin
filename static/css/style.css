@@ -49,3 +49,13 @@ table {
 table thead th { border-bottom: 1px solid #ddd; }
 th, td { padding: 5px; }
 thead, tfoot, tr:nth-child(even) { background: #eee; }
+
+.thumbnail {
+	float: right;
+	margin: 5px 0 5px 20px;
+}
+
+.thumbnail img {
+	width: 100%;
+	max-width: 200px;
+}
